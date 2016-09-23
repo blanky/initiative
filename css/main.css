@@ -1,0 +1,92 @@
+body {
+	background-color:#ffffff;
+}
+
+.body-container {
+	height: 100vh;
+	margin-top:0px;
+}
+
+#top-half {
+	height:80vh;
+}
+
+#bottom-half {
+	height:20vh;
+}
+
+#timer-div {
+	float:left;
+	height:100%;
+}
+
+#list-div {
+	float:right;
+	height:100%;
+}
+
+#scroll-div {
+	width:80%;
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.button-container {
+	margin-top:20px;
+	text-align:center;
+	
+}
+
+.btn-lg {
+	min-width:100px;
+}
+
+.btn {
+	border-radius:0px;
+}
+
+.creature-active {
+	background-color:green;
+}
+
+#hidden-button {
+	display:none;
+}
+
+#table-list {
+	width:100%;
+}
+
+#name-column {
+	width:70%;
+}
+
+#init-column {
+	width:30%;
+}
+
+#conflict-footer {
+	text-align:center;
+}
+
+#timer-text {
+	text-align:center;
+}
+
+#timer-buttons {
+	text-align:center;
+}
+
+.center-column {
+	text-align:center;
+}
+
+.remove-el {
+	cursor:pointer;
+	color:red;
+}
+
+#changeInit {
+	max-width:50px;
+}
