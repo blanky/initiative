@@ -34,14 +34,14 @@
 			</div>
 		</div>
 		<div class="col-sm-12" id="bottom-half">
-			<div class="col-sm-4" id="sw-container">
+			<div class="col-sm-3" id="sw-container">
 			</div>
-			<div class="col-sm-8" id="se-container">
-				<div class="col-sm-4 btn-group button-container" id="nav-buttons">
+			<div class="col-sm-9" id="se-container">
+				<div class="col-sm-5 btn-group button-container" id="nav-buttons">
 					<button type="button" class="btn btn-lg btn-default" id="top-button">Top</button>
 					<button type="button" class="btn btn-lg btn-default" id="nxt-button">Next</button>
 				</div>
-				<div class="col-sm-8 btn-group button-container" id="control-buttons">
+				<div class="col-sm-7 btn-group button-container" id="control-buttons">
 					<button type="button" class="btn btn-lg btn-warning" id="clrnpc-button">Clear NPCs</button>
 					<button type="button" class="btn btn-lg btn-danger" id="clrall-button">Clear All</button>
 					<button type="button" class="btn btn-lg btn-default" id="add-button" data-toggle="modal" data-target="#addModal">Add</button>
@@ -57,17 +57,23 @@
 	          <h4 class="modal-title">Add a creature</h4>
 	        </div>
 	        <div class="modal-body">
-	          <div class="col-sm-9">
+	          <div class="col-sm-5">
 							<input type="text" class="form-control" id="creature-name" placeholder="Name" />
 						</div>
-						<div class="col-sm-3">
+						<div class="col-sm-2">
 							<input type="number" class="form-control" id="creature-initiative" placeholder="Initiative" />
+						</div>
+						<div class="col-sm-2">
+							<p>Lair action?<br><input type="checkbox" id="creature-lair-action" /></p>
+						</div>
+						<div class="col-sm-2">
+							<p>Player character?<br><input type="checkbox" id="creature-player-character" /></p>
 						</div>
 						<br><br>
 	        </div>
 	        <div class="modal-footer">
-	          <button type="button" class="btn btn-default" id="add-creature-button">OK</button>
-	          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	          <button type="button" class="btn btn-md btn-default" id="add-creature-button">OK</button>
+	          <button type="button" class="btn btn-md btn-default" data-dismiss="modal">Cancel</button>
 	        </div>
 	      </div>
 	    </div>

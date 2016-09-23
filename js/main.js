@@ -7,6 +7,8 @@ $(document).ready(function() {
 	$('#add-button').click(function() {
 		$('#creature-name').val('');
 		$('#creature-initiative').val('');
+		$('#creature-player-character').prop('checked', false);
+		$('#creature-lair-action').prop('checked', false);
 	});
 	$('#add-creature-button').click(function() {
 		//check if there's stuff in the forms
@@ -24,8 +26,16 @@ $(document).ready(function() {
 		initObj.name = $('#creature-name').val();
 		initObj.initiative = parseInt($('#creature-initiative').val());
 		initObj.highlight = false;
-		initObj.pc = false;
+		initObj.pc = $('#creature-player-character').is(':checked');
 		creature_list.push(initObj);
+		if($('#creature-lair-action').is(':checked')) {
+			var lairObj = {};
+			lairObj.name = $('#creature-name').val() + ' (Lair action)';
+			lairObj.initiative = 20;
+			lairObj.highlight = false;
+			lairObj.pc = $('#creature-player-character').is(':checked');
+			creature_list.push(lairObj);
+		}
 		//hide modal
 		$('#addModal').modal('hide');
 		//check against creature_list to see if there's conflicting initiatives

@@ -39,7 +39,7 @@ body {
 }
 
 .btn-lg {
-	min-width:100px;
+	min-width:130px;
 }
 
 .btn {
@@ -89,4 +89,12 @@ body {
 
 #changeInit {
 	max-width:50px;
+}
+
+p {
+	text-align:center;
+}
+
+.btn-md {
+	min-width:70px;
 }
